@@ -46,6 +46,11 @@ public interface OwnerRepository extends Repository<Owner, Integer> {
 	@Transactional(readOnly = true)
 	Collection<Owner> findByLastName(@Param("lastName") String lastName);
 
+	// like 부분은 %를 붙일 떄 : 앞에 꼭 해야 한다. :이라는 것이 값을 가리키기 때문에 떨어져 있으면 안된다.
+    @Query("SELECT DISTINCT owner FROM Owner owner left join fetch owner.pets WHERE owner.firstName LIKE %:firstName%")
+    @Transactional(readOnly = true)
+    Collection<Owner> findByFirstName(@Param("firstName") String firstName);
+
 	/**
 	 * Retrieve an {@link Owner} from the data store by id.
 	 * @param id the id to search for

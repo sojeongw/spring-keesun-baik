@@ -116,24 +116,37 @@ class OwnerControllerTests {
 				.andExpect(view().name("owners/findOwners"));
 	}
 
-	@Test
-	void testProcessFindFormSuccess() throws Exception {
-		given(this.owners.findByLastName("")).willReturn(Lists.newArrayList(george, new Owner()));
-		mockMvc.perform(get("/owners")).andExpect(status().isOk()).andExpect(view().name("owners/ownersList"));
-	}
+//	@Test
+//	void testProcessFindLastNameFormSuccess() throws Exception {
+//		given(this.owners.findByLastName("")).willReturn(Lists.newArrayList(george, new Owner()));
+//		mockMvc.perform(get("/owners")).andExpect(status().isOk()).andExpect(view().name("owners/ownersList"));
+//	}
 
-	@Test
-	void testProcessFindFormByLastName() throws Exception {
-		given(this.owners.findByLastName(george.getLastName())).willReturn(Lists.newArrayList(george));
-		mockMvc.perform(get("/owners").param("lastName", "Franklin")).andExpect(status().is3xxRedirection())
-				.andExpect(view().name("redirect:/owners/" + TEST_OWNER_ID));
-	}
+    @Test
+    void testProcessFindFormSuccess() throws Exception {
+        given(this.owners.findByFirstName("")).willReturn(Lists.newArrayList(george, new Owner()));
+        mockMvc.perform(get("/owners")).andExpect(status().isOk()).andExpect(view().name("owners/ownersList"));
+    }
+
+//	@Test
+//	void testProcessFindFormByLastName() throws Exception {
+//		given(this.owners.findByLastName(george.getLastName())).willReturn(Lists.newArrayList(george));
+//		mockMvc.perform(get("/owners").param("lastName", "Franklin")).andExpect(status().is3xxRedirection())
+//				.andExpect(view().name("redirect:/owners/" + TEST_OWNER_ID));
+//	}
+
+    @Test
+    void testProcessFindFormByFirstName() throws Exception {
+        given(this.owners.findByFirstName(george.getFirstName())).willReturn(Lists.newArrayList(george));
+        mockMvc.perform(get("/owners").param("firstName", "George")).andExpect(status().is3xxRedirection())
+            .andExpect(view().name("redirect:/owners/" + TEST_OWNER_ID));
+    }
 
 	@Test
 	void testProcessFindFormNoOwnersFound() throws Exception {
-		mockMvc.perform(get("/owners").param("lastName", "Unknown Surname")).andExpect(status().isOk())
-				.andExpect(model().attributeHasFieldErrors("owner", "lastName"))
-				.andExpect(model().attributeHasFieldErrorCode("owner", "lastName", "notFound"))
+		mockMvc.perform(get("/owners").param("firstName", "Unknown First Name")).andExpect(status().isOk())
+				.andExpect(model().attributeHasFieldErrors("owner", "firstName"))
+				.andExpect(model().attributeHasFieldErrorCode("owner", "firstName", "notFound"))
 				.andExpect(view().name("owners/findOwners"));
 	}
 

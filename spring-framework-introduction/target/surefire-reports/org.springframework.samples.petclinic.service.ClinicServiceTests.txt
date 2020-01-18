@@ -1,4 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: org.springframework.samples.petclinic.service.ClinicServiceTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.635 s - in org.springframework.samples.petclinic.service.ClinicServiceTests
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 21.585 s <<< FAILURE! - in org.springframework.samples.petclinic.service.ClinicServiceTests
+shouldFindOwnersByFirstName  Time elapsed: 0.084 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected size:<2> but was:<0> in:
+<[]>
+	at org.springframework.samples.petclinic.service.ClinicServiceTests.shouldFindOwnersByFirstName(ClinicServiceTests.java:87)
+
+shouldInsertOwner  Time elapsed: 0.055 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <0>
+to be equal to:
+ <1>
+but was not.
+	at org.springframework.samples.petclinic.service.ClinicServiceTests.shouldInsertOwner(ClinicServiceTests.java:118)
+

@@ -1,0 +1,17 @@
+# Created at 2020-01-18T14:31:01.371
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-01-18T14:31:01.373
+Unexpected IOException with stream: 2020-01-18 14:31:01.372 DEBUG 3407 --- [extShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1c571162, started on Sat Jan 18 14:30:49 KST 2020
+
+
+# Created at 2020-01-18T14:31:01.641
+Unexpected IOException with stream: 2020-01-18 14:31:01.640  INFO 3407 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+

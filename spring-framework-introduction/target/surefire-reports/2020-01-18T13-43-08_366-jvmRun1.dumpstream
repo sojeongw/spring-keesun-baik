@@ -1,0 +1,41 @@
+# Created at 2020-01-18T13:46:36.530
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-01-18T13:46:36.532
+Unexpected IOException with stream: 2020-01-18 13:46:36.530 DEBUG 85976 --- [extShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@72b131f2, started on Sat Jan 18 13:44:30 KST 2020
+
+
+# Created at 2020-01-18T13:46:36.537
+Unexpected IOException with stream: 2020-01-18 13:46:36.531 DEBUG 85976 --- [extShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@30f5f9ab, started on Sat Jan 18 13:44:13 KST 2020
+
+
+# Created at 2020-01-18T13:46:36.546
+Unexpected IOException with stream: 2020-01-18 13:46:36.530 DEBUG 85976 --- [extShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1c571162, started on Sat Jan 18 13:43:37 KST 2020
+
+
+# Created at 2020-01-18T13:46:36.550
+Unexpected IOException with stream: 2020-01-18 13:46:36.531 DEBUG 85976 --- [extShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3df10807, started on Sat Jan 18 13:43:56 KST 2020
+
+
+# Created at 2020-01-18T13:46:36.910
+Unexpected IOException with stream: 2020-01-18 13:46:36.910  INFO 85976 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+
+# Created at 2020-01-18T13:46:36.911
+Unexpected IOException with stream: 2020-01-18 13:46:36.910  INFO 85976 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+
+# Created at 2020-01-18T13:46:36.911
+Unexpected IOException with stream: 2020-01-18 13:46:36.910  INFO 85976 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+
+# Created at 2020-01-18T13:46:36.912
+Unexpected IOException with stream: 2020-01-18 13:46:36.910  INFO 85976 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+
