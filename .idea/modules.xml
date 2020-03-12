@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-framework-core-01-spring-application-context/spring-framework-core-01-spring-application-context.iml" filepath="$PROJECT_DIR$/spring-framework-core-01-spring-application-context/spring-framework-core-01-spring-application-context.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-framework-introduction/spring-framework-introduction.iml" filepath="$PROJECT_DIR$/spring-framework-introduction/spring-framework-introduction.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-keesun-baik.iml" filepath="$PROJECT_DIR$/.idea/spring-keesun-baik.iml" />
     </modules>

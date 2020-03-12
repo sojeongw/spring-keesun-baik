@@ -7,15 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-framework-introduction" />
+        <module name="spring-framework-core-01-spring-application-context" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-framework-core-01-spring-application-context" target="1.8" />
       <module name="spring-framework-introduction" target="1.8" />
       <module name="spring-petclinic" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-framework-core-01-spring-application-context" options="-parameters" />
       <module name="spring-framework-introduction" options="-parameters" />
       <module name="spring-petclinic" options="-parameters" />
     </option>
