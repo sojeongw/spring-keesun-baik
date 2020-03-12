@@ -2,14 +2,17 @@ package me.whiteship.springapplicationcontext;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.Arrays;
 
 @SpringBootApplication
 public class DemoApplication {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
+        // 자바 설정 파일을 이용해 불러온다.
+        ApplicationContext context =
+                new AnnotationConfigApplicationContext(ApplicationConfig.class);
+
         String[] beanDefinitionNames = context.getBeanDefinitionNames();
 
         // [bookService, bookRepository]
