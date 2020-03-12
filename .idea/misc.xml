@@ -8,6 +8,7 @@
       <list>
         <option value="$PROJECT_DIR$/spring-framework-introduction/pom.xml" />
         <option value="$PROJECT_DIR$/spring-framework-core-01-spring-application-context/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-core-02-autowired/pom.xml" />
       </list>
     </option>
   </component>
