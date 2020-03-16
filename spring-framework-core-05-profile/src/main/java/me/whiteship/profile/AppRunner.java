@@ -23,5 +23,7 @@ public class AppRunner implements ApplicationRunner {
         Environment environment = ctx.getEnvironment();
         // 설정한 VM 옵션을 출력한다.
         System.out.println(environment.getProperty("app.name"));
+        // properties 파일르 설정한 값을 출력한다.
+        System.out.println(environment.getProperty("app.about"));
     }
 }
