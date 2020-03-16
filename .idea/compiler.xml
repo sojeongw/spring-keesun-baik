@@ -8,22 +8,23 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-framework-introduction" />
         <module name="spring-framework-core-01-spring-application-context" />
+        <module name="spring-framework-core-03-component" />
         <module name="spring-framework-core-02-autowired" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="10">
       <module name="spring-framework-core-01-spring-application-context" target="1.8" />
       <module name="spring-framework-core-02-autowired" target="1.8" />
+      <module name="spring-framework-core-03-component" target="10" />
       <module name="spring-framework-introduction" target="1.8" />
-      <module name="spring-petclinic" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-framework-core-01-spring-application-context" options="-parameters" />
       <module name="spring-framework-core-02-autowired" options="-parameters" />
+      <module name="spring-framework-core-03-component" options="-parameters" />
       <module name="spring-framework-introduction" options="-parameters" />
-      <module name="spring-petclinic" options="-parameters" />
     </option>
   </component>
 </project>
