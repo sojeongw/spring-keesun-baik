@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-framework-core-02-autowired/spring-framework-core-02-autowired.iml" filepath="$PROJECT_DIR$/spring-framework-core-02-autowired/spring-framework-core-02-autowired.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-framework-core-03-component/spring-framework-core-03-component.iml" filepath="$PROJECT_DIR$/spring-framework-core-03-component/spring-framework-core-03-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-framework-core-04-scope/spring-framework-core-04-scope.iml" filepath="$PROJECT_DIR$/spring-framework-core-04-scope/spring-framework-core-04-scope.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-framework-core-05-profile/spring-framework-core-05-profile.iml" filepath="$PROJECT_DIR$/spring-framework-core-05-profile/spring-framework-core-05-profile.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-framework-introduction/spring-framework-introduction.iml" filepath="$PROJECT_DIR$/spring-framework-introduction/spring-framework-introduction.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-keesun-baik.iml" filepath="$PROJECT_DIR$/.idea/spring-keesun-baik.iml" />
     </modules>
