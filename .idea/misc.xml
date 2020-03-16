@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/spring-framework-core-02-autowired/pom.xml" />
         <option value="$PROJECT_DIR$/spring-framework-core-03/pom.xml" />
         <option value="$PROJECT_DIR$/spring-framework-core-03-component/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework-core-04-scope/pom.xml" />
       </list>
     </option>
   </component>

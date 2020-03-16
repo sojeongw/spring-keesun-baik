@@ -22,7 +22,12 @@ public class DemoApplication {
         // 이 Initializer는 내가 원하는 애플리케이션 컨텍스트를 주입받을 수 있다.
         app.addInitializers((ApplicationContextInitializer<GenericApplicationContext>) ctx -> {
             // 빈 주입 시 아래처럼 원하는 코드를 추가할 수 있는 장점이 있다.
-            if()
+            /*
+            if(){
+
+            }
+            */
+
             // 이 GenericApplicationContext을 가지고 직접 원하는 빈을 등록한다.
             ctx.registerBean(MyService.class);
             ctx.registerBean(ApplicationRunner.class, () -> args1
