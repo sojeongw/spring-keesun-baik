@@ -21,9 +21,7 @@ public class AppRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         // EnvironmentCapable 인터페이스에서 가져온 getEnvironment 메서드
         Environment environment = ctx.getEnvironment();
-        // 현재 등록된 프로파일을 불러온다.
-        System.out.println(Arrays.toString(environment.getActiveProfiles()));
-        // 현재 기본으로 등록된 프로파일을 볼러온다.
-        System.out.println(Arrays.toString(environment.getDefaultProfiles()));
+        // 설정한 VM 옵션을 출력한다.
+        System.out.println(environment.getProperty("app.name"));
     }
 }
