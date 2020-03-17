@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-framework-core-07-event-publisher" />
         <module name="spring-framework-core-04-scope" />
         <module name="spring-framework-introduction" />
         <module name="spring-framework-core-01-spring-application-context" />
@@ -22,6 +23,7 @@
       <module name="spring-framework-core-04-scope" target="1.8" />
       <module name="spring-framework-core-05-profile" target="1.8" />
       <module name="spring-framework-core-06-message-source" target="10" />
+      <module name="spring-framework-core-07-event-publisher" target="1.8" />
       <module name="spring-framework-introduction" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -33,6 +35,7 @@
       <module name="spring-framework-core-04-scope" options="-parameters" />
       <module name="spring-framework-core-05-profile" options="-parameters" />
       <module name="spring-framework-core-06-message-source" options="-parameters" />
+      <module name="spring-framework-core-07-event-publisher" options="-parameters" />
       <module name="spring-framework-introduction" options="-parameters" />
     </option>
   </component>
