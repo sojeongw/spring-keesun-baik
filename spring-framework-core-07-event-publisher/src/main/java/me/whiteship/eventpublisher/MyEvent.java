@@ -1,18 +1,18 @@
 package me.whiteship.eventpublisher;
 
-import org.springframework.context.ApplicationEvent;
-
-// 이벤트는 빈으로 등록되지 않는다. 원하는 데이터를 전달하는 역할이다.
-public class MyEvent extends ApplicationEvent{
+public class MyEvent{
     private int data;
 
-    public MyEvent(Object source) {
-        super(source);
-    }
+    // ApplicationEvent는 지웠지만 이벤트를 발생시킨 소스를 갖고 있고 싶다면 이렇게 한다.
+    private Object source;
 
     public MyEvent(Object source, int data) {
-        super(source);
+        this.source = source;
         this.data = data;
+    }
+
+    public Object getSource() {
+        return source;
     }
 
     public int getData() {
