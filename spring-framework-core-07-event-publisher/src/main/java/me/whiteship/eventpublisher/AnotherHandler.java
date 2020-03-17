@@ -6,15 +6,13 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MyEventHandler{
-    // 이벤트를 처리하는 메서드 위에 에너테이션을 추가해준다.
-    // 이제 메서드 이름을 마음대로 바꿔도 된다.
+public class AnotherHandler {
     @EventListener
-    // 실행 순서 지정
-    @Order(Ordered.HIGHEST_PRECEDENCE)
+    // 값을 더하면 더 나중에 실행된다.
+    @Order(Ordered.HIGHEST_PRECEDENCE + 2)
     public void handle(MyEvent myEvent) {
         // 스레드 확인용
         System.out.println(Thread.currentThread().toString());
-        System.out.println("이벤트 받았다. 데이터는 " + myEvent.getData());
+        System.out.println("Another " + myEvent.getData());
     }
 }
