@@ -19,8 +19,13 @@ public class MessageSourceApplication {
     public MessageSource messageSource() {
         var messageSource = new ReloadableResourceBundleMessageSource();
         messageSource.setBasename("classpath:/messages");
+
         // 한글이 깨지므로 인코딩 해준다.
         messageSource.setDefaultEncoding("UTF-8");
+
+        // 리소스를 캐시하는 시간을 3초로 설정한다.
+        messageSource.setCacheSeconds(3);
+
         return messageSource;
     }
 }
