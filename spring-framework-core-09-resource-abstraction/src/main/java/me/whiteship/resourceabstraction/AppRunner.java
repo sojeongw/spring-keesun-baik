@@ -20,12 +20,15 @@ public class AppRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        // 클래스 패스 기준으로 configLocation에 해당하는 문자열을 가지고 빈 설정 파일을 찾는다.
-        var ctx1 = new ClassPathXmlApplicationContext("configtest.xml");
-        // 파일 시스템 기준으로 configLocation에 해당하는 문자열을 가지고 빈 설정 파일을 찾는다.
-        var ctx2 = new FileSystemXmlApplicationContext("configtest.xml");
-        // 애플리케이션 루트 기준으로 configLocation에 해당하는 문자열을 가지고 빈 설정 파일을 찾는다.
-        var ctx3 = new WebApplicationContext("config.xml");
+        // 리소스 로더의 타입. 웹 애플리케이션 리소스로 나와야 한다.
+        System.out.println(resourceLoader.getClass());
 
+        Resource resource = resourceLoader.getResource("classpath:test.txt");
+        // 리소스의 타입. 클래스 패스 리소스가 나와야 한다.
+        System.out.println(resource.getClass());
+
+        System.out.println(resource.exists());
+        System.out.println(resource.getDescription());
+        System.out.println(Files.readString(Path.of(resource.getURI())));
     }
 }
