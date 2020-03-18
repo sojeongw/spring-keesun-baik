@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-framework-core-06-message-source/spring-framework-core-06-message-source.iml" filepath="$PROJECT_DIR$/spring-framework-core-06-message-source/spring-framework-core-06-message-source.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-framework-core-07-event-publisher/spring-framework-core-07-event-publisher.iml" filepath="$PROJECT_DIR$/spring-framework-core-07-event-publisher/spring-framework-core-07-event-publisher.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-framework-core-08-resource-loader/spring-framework-core-08-resource-loader.iml" filepath="$PROJECT_DIR$/spring-framework-core-08-resource-loader/spring-framework-core-08-resource-loader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-framework-core-09-resource-abstraction/spring-framework-core-09-resource-abstraction.iml" filepath="$PROJECT_DIR$/spring-framework-core-09-resource-abstraction/spring-framework-core-09-resource-abstraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-framework-introduction/spring-framework-introduction.iml" filepath="$PROJECT_DIR$/spring-framework-introduction/spring-framework-introduction.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-keesun-baik.iml" filepath="$PROJECT_DIR$/.idea/spring-keesun-baik.iml" />
     </modules>
